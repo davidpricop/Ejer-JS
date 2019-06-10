@@ -1,0 +1,18 @@
+.header {
+    float: left;
+    width: 100%;
+}
+
+.header_colLeft {
+    float: left;
+    width: 50%;
+}
+
+.header_colRight {
+    float: left;
+    width: 50%;
+}
+
+.header_title, .header_autor, .header_imagen, .header_texto {
+    display: block;
+}

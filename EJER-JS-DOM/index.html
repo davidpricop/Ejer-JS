@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main class="header">
+        <div class="header_colLeft" id="header_colLeft"></div>
+        <div class="header_colRight">
+            <form action="#" class="header_form" method="get">
+                <div class="header_title">
+                    <input type="text" name="title" id="title" placeholder="Titulo de la noticia">
+                </div>
+                <div class="header_autor">
+                    <input type="text" name="autor" id="autor" placeholder="Nombre del autor">
+                </div>
+                <div class="header_imagen">
+                    <input type="text" name="imagen" id="imagen" placeholder="Url de la imagen">
+                </div>
+                <div class="header_texto">
+                    <input type="text" name="texto" id="texto" placeholder="Contenido de la noticia">
+                </div>
+                <input type="button" name="btn-añadirNoticia" value="Añadir noticia" onclick="añadirNoticia()">
+            </form>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
