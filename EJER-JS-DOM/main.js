@@ -8,20 +8,20 @@ function añadirNoticia() {
     var div = document.createElement('div');
     div.className = "header_colLeft_div";
 
-    var h1_title = document.createElement('div');
-    h1_title.textContent = title;
+    // var h1_title = document.createElement('div');
+    // h1_title.textContent = title;
 
-    var h3_autor = document.createElement('h3');
-    h3_autor.className = "header_colLeft_autor";
-    h3_autor.textContent = autor;
+    // var h3_autor = document.createElement('h3');
+    // h3_autor.className = "header_colLeft_autor";
+    // h3_autor.textContent = autor;
     
-    var img = document.createElement('img');
-    img.className = "header_colLeft_img";
-    img.src = imagen;
+    // var img = document.createElement('img');
+    // img.className = "header_colLeft_img";
+    // img.src = imagen;
 
-    var texto_div = document.createElement('p');
-    texto_div.className = "header_colLeft_p";
-    texto_div.textContent = texto;
+    // var texto_div = document.createElement('p');
+    // texto_div.className = "header_colLeft_p";
+    // texto_div.textContent = texto;
 
     var header_colLeft = document.querySelector('.header_colLeft');
     var header_colLeft_div = document.querySelector('.header_colLeft_div');
