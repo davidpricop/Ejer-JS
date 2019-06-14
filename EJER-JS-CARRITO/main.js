@@ -1,0 +1,4 @@
+
+function agregarProducto(nombreProd,precioProd) {
+    
+}
