@@ -95,43 +95,64 @@ class Visual extends Calculadora {
     }
 
     pintarCal() {
-        var form = document.createElement("form");
+        var form = document.createElement("div");
         var div1 = document.createElement("div");
         var div2 = document.createElement("div");
         var div3 = document.createElement("div");
         var div4 = document.createElement("div");
+        var div5 = document.createElement("div");
 
         var input1 = document.createElement("input");
         input1.type = "text";
         input1.placeholder = "Introduce tus numeros...";
-        input1.name = "valores";
+        input1.name = "valor1";
+        input1.setAttribute("id","valor1");
         var input2 = document.createElement("input");
-        input2.type = "button";
-        input2.value = "Sumar";
-        input2.name = "sumar";
-        input2.addEventListener("click", cal.sumar());
+        input2.type = "text";
+        input2.placeholder = "Introduce tus numeros...";
+        input2.name = "valor2";
+        input2.setAttribute("id","valor2");
         var input3 = document.createElement("input");
         input3.type = "button";
-        input3.value = "Restar";
-        input3.name = "restar";
+        input3.value = "Sumar";
+        input3.name = "sumar";
+        input3.setAttribute("onclick","cal.sumar()");
         var input4 = document.createElement("input");
-        input4.type = "text";
-        input4.placeholder = "Tu resultado aparecerá aqui";
-        input4.name = "resultado";
+        input4.type = "button";
+        input4.value = "Restar";
+        input4.name = "restar";
+        input4.setAttribute("onclick","cal.restar()");
+        var input5 = document.createElement("input");
+        input5.type = "text";
+        input5.placeholder = "Tu resultado aparecerá aqui";
+        input5.name = "resultado";
 
         document.body.appendChild(form);
         form.appendChild(div1);
         form.appendChild(div2);
         form.appendChild(div3);
         form.appendChild(div4);
+        form.appendChild(div5);
         div1.appendChild(input1);
         div2.appendChild(input2);
         div3.appendChild(input3);
         div4.appendChild(input4);
+        div4.appendChild(input5);
     }
 
-    sumar () {
-        alert("lo tienes");
+    sumar() {
+        let valor1 = document.getElementById("valor1").value;
+        document.getElementById("valor1").value = "";
+        let valor2 = document.getElementById("valor2").value;
+        document.getElementById("valor2").value = "";
+        console.log(valor1 + "" + valor2);
+
+        let result = super.sumar(valor1,valor2);
+        return result;
+    }
+
+    restar() {
+        // var valor1 = document.getElementById("valores").value;
         // var valor1 = parseInt(prompt("Introduce un valor"));
         // var valor2 = parseInt(prompt("Introduce un valor"));
 
